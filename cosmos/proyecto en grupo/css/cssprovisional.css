@@ -1,0 +1,78 @@
+body{
+    background-image:url(../fotos/espacio3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    display: grid;
+	grid-template-areas: 
+    "nav nav nav"
+	"header header header"
+	"aside main main"
+	"aside main main"
+    "footer footer footer";
+}
+
+header{
+grid-area: header;
+text-align: center;
+    position: relative;
+}
+
+header h1{
+	text-transform: uppercase;
+}
+
+nav{
+    flex-direction: row;
+}
+
+a{
+    color: pink;
+}
+
+a:hover{
+    color: purple;
+}
+
+a:active{
+    color: white;
+}
+
+article{
+    background-color: rgba(102, 29, 29, 0.719);
+    margin: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+article h2{
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*Mobil*/
+@media (max-width: 500px) {
+    body{
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+        }
+    img{
+        width: 90%;
+    }
+    }
+    
