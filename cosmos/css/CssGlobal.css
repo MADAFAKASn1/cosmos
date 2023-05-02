@@ -40,7 +40,7 @@ a:active{
 }
 
 article{
-  background-color: rgba(102, 29, 29, 0.719);
+
   margin: 0.8rem;
   padding: 0.5rem;
   border-radius: 1rem;
@@ -122,6 +122,26 @@ footer{
   
               
   animation: rotate1 200s linear infinite;
+}
+
+.tierra{
+  color: white;
+  background-color:teal;
+}
+
+.luna{
+  color: black;
+  background-color: gray;
+}
+
+.sol{
+  color: black;
+  background-color:sandybrown;
+}
+
+footer img{
+  width: 15%;
+  height: 15%;
 }
 
 @keyframes world {
