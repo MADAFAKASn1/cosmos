@@ -68,6 +68,10 @@ footer{
   justify-content: space-evenly;
 }
 
+div{
+  text-align: center;
+}
+
 /*Movil*/
 @media (max-width: 500px) {
   body{
