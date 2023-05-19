@@ -1,8 +1,17 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   background-image:url(../fotos/espacio3.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+}
+
+#contenedor{
   display: grid;
   grid-template-areas: 
   "nav nav nav"
@@ -10,6 +19,8 @@ body{
   "aside main main"
   "aside main main"
   "footer footer footer";
+
+  grid-auto-columns: 33%
 }
 
 header{
@@ -50,6 +61,7 @@ article h2{
 
 main{
   grid-area: main;
+  
 }
 
 aside{
@@ -58,8 +70,7 @@ aside{
 
 footer{
   grid-area: footer;
-  width: 100%;
-  height: 100%;
+  
 }
 
 #enlaces{
@@ -68,21 +79,74 @@ footer{
   justify-content: space-evenly;
 }
 
+footer div img{
+  width: 45%;
+  height: 55%;
+  object-fit: contain;
+  border-radius: 5%;
+  margin: 1rem;
+}
+
+.imgistituto{
+  width: 25%;
+  height: fit-content;
+}
+
+footer{
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
 /*Movil*/
 @media (max-width: 500px) {
-  body{
-      grid-template-areas: 
+  #contenedor{
+      grid-template-areas:
+      "nav" 
       "header"
       "main"
       "aside"
       "footer";
+      
+      grid-auto-columns: 100%;
+      }
+
+      nav{
+        width: 100%;
+      }
+      article{
+        width: 100%;
       }
   img{
       width: 90%;
   }
 }
-  
+/*Tablet*/
+@media (min-width: 500px) and (max-width: 700px) {
+  #contenedor{
+      grid-template-areas:
+      "nav nav" 
+      "header header"
+      "aside main"
+      "footer footer";
+      
+      grid-auto-columns: 50%;
+      }
+  img{
+      width: 90%;
+  }
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+}
 
 #imgTierra {
 	animation-name: world;
@@ -146,10 +210,6 @@ footer{
   background-color:darkorange
 }
 
-footer img{
-  width: 25%;
-  height: 25%;
-}
 
 @keyframes world {
   0%{
@@ -169,10 +229,6 @@ footer img{
   }
 }
 
-/*@keyframes spin {
-  0% { transform: translate(-50%, -50%) rotateY(0) rotateX(0); }
-  100% { transform: translate(-50%, -50%) rotateY(360deg) rotateX(360deg); }
-}*/
 
 
    
