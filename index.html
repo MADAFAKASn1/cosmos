@@ -7,27 +7,119 @@
     <meta name="description" content="Pagina Index para el proyecto cosmos">
     <title>COSMOS</title>
     <link rel="stylesheet" href="./css/cssindex.css">
+    <link rel="stylesheet" href="./css/cssCarrusel.css">
+    
 </head>
 <body>
-    <nav>
-        <ul id="enlaces">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./planetas/sol.html">Sol</a></li>
-            <li><a href="./planetas/mercurio.html">Mercurio</a></li>
-            <li><a href="./planetas/venus.html">Venus</a></li>
-            <li><a href="./planetas/tierra.html">Tierra</a></li>
-            <li><a href="./planetas/luna.html">Luna</a></li>
-            <li><a href="./planetas/marte.html">Marte</a></li>
-            <li><a href="./planetas/jupiter.html">Júpiter</a></li>
-            <li><a href="./planetas/saturno.html">Saturno</a></li>
-            <li><a href="./planetas/urano.html">Urano</a></li>
-            <li><a href="./planetas/neptuno.hmtl">Neptuno</a></li>
-        </ul>
-    </nav>
     <header>
         <h1>Cosmos</h1>
     </header>
+    
     <main>
+        <section class="carousel">
+            <ul class="carousel__list">
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/sol.html"><img src="./fotos/sol.png" width="480" height="720" alt=""/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Sol</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/mercurio.html"><img src="./fotos/Mercury-Planet-PNG-Clipart.png" width="480" height="720" alt=""/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Mercurio</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/venus.html"><img src="./fotos/Venus-PNG-Background.png" width="480" height="720" alt=""/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Venus</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/tierra.html"><img src="./fotos/tierra.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Tierra</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0" data-active="data-active">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/luna.html"><img src="./fotos/luna.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Luna</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/marte.html"><img src="./fotos/Mars-PNG-Picture.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Marte</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/jupiter.html"><img src="./fotos/Jupiter-Transparent.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Jupiter</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/saturno.html"><img src="./fotos/saturno.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Saturno</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/urano.html"><img src="./fotos/urano.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Urano</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel__item" tabindex="0">
+                <div class="carousel__box">
+                  <div class="carousel__image"><a href="./planetas/neptuno.hmtl"><img src="./fotos/Neptuno.png" width="480" height="720"/></a></div>
+                  <div class="carousel__contents">
+                    <h2 class="user__name">Neptuno</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="carousel__nav">
+              <button class="prev">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M9.586 4l-6.586 6.586a2 2 0 0 0 0 2.828l6.586 6.586a2 2 0 0 0 2.18 .434l.145 -.068a2 2 0 0 0 1.089 -1.78v-2.586h7a2 2 0 0 0 2 -2v-4l-.005 -.15a2 2 0 0 0 -1.995 -1.85l-7 -.001v-2.585a2 2 0 0 0 -3.414 -1.414z"></path>
+                </svg><span>prev</span>
+              </button>
+              <button class="next"><span>next</span>
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M12.089 3.634a2 2 0 0 0 -1.089 1.78l-.001 2.586h-6.999a2 2 0 0 0 -2 2v4l.005 .15a2 2 0 0 0 1.995 1.85l6.999 -.001l.001 2.587a2 2 0 0 0 3.414 1.414l6.586 -6.586a2 2 0 0 0 0 -2.828l-6.586 -6.586a2 2 0 0 0 -2.18 -.434l-.145 .068z"></path>
+                </svg>
+              </button>
+            </div>
+          </section>
+          <script  src="./javaScript/script.js"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LLWL5N9CSM');
+          </script>
         <iframe src="https://eyes.nasa.gov/apps/orrery/#/home"></iframe>
     </main>
 </body>
