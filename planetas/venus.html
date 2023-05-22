@@ -7,25 +7,40 @@
     <meta name="description" content="Pagina de Venus para el proyecto cosmos">
     <title>Venus</title>
     <link rel="stylesheet" href="../css/CssGlobal.css">
+    <link rel="stylesheet" href="../css/CssMenuHamburguesa.css">
 </head>
 <body>
-    <div id="contenedor">
-        <nav>
-            <ul id="enlaces">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sol.html">Sol</a></li>
-                <li><a href="mercurio.html">Mercurio</a></li>
-                <li><a href="venus.html">Venus</a></li>
-                <li><a href="tierra.html">Tierra</a></li>
-                <li><a href="luna.html">Luna</a></li>
-                <li><a href="marte.html">Marte</a></li>
-                <li><a href="jupiter.html">Júpiter</a></li>
-                <li><a href="saturno.html">Saturno</a></li>
-                <li><a href="urano.html">Urano</a></li>
-                <li><a href="neptuno.hmtl">Neptuno</a></li>
-            </ul>
-        </nav>
+    <div id="contenedor" >
+        <div id="mySidenav" class="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="sol.html">Sol</a></li>
+                    <li><a href="mercurio.html">Mercurio</a></li>
+                    <li><a href="venus.html">Venus</a></li>
+                    <li><a href="tierra.html">Tierra</a></li>
+                    <li><a href="luna.html">Luna</a></li>
+                    <li><a href="marte.html">Marte</a></li>
+                    <li><a href="jupiter.html">Júpiter</a></li>
+                    <li><a href="saturno.html">Saturno</a></li>
+                    <li><a href="urano.html">Urano</a></li>
+                    <li><a href="neptuno.hmtl">Neptuno</a></li>
+                </ul>
+            </nav>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <script src="../javaScript/scriptMenuHamburguesa.js"></script>
         <header>
+            <div id="lenguaje">
+                <button class="btn" onclick="changeLanguage('es')">
+                    <img src="../fotos/espana-fotor-bg-remover-2023052210536.png" alt="español">
+                </button>
+    
+                <button class="btn" onclick="changeLanguage('eng')">
+                    <img src="../fotos/reino-unido.png" alt="ingles">
+                </button>
+            </div>
             <div class="centro">
                 <div class="claseImg" id="imgVenus"></div>
             </div>
