@@ -26,11 +26,12 @@ body{
 
 header{
   grid-area: header;
-  text-align: center;
+  text-align: end;
 }
 
 header h1{
   text-transform: uppercase;
+  text-align: center;
 }
 
 nav{
@@ -78,9 +79,17 @@ ul{
   list-style: none;
 }
 
-#enlaces{
-  display: flex;
-  justify-content: space-evenly;
+.btn{
+  cursor: pointer;
+        border:solid transparent;
+        background-color: transparent;
+        color: transparent;
+        box-shadow: transparent;
+}
+
+.btn img{
+  width: 2rem;
+  height: 2rem;
 }
 
 footer div img{
