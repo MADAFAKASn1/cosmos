@@ -3,12 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/*@font-face {
   font-family: 'Helvetiva Now';
-  src: url('');
-}*/
+}
 
 body{
   background-image:url(../fotos/espacio3.webp) ;
@@ -323,7 +319,7 @@ footer p{
 }
 
 .urano{
-  background-color: rgba(149, 250, 250, 0.705);
+  background-color: rgba(90, 197, 197, 0.658);
 }
 
 .neptuno{
