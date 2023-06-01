@@ -293,10 +293,9 @@
 
 .carousel__nav {
     padding: 1em;
-    justify-self: end;
     grid-row: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1em;
 }
 
