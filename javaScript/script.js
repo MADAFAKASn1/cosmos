@@ -92,10 +92,10 @@ const startAuto = () => {
     auto = setInterval( autoSlide, 3000 );
 }
 
-startAuto();
+//startAuto();
 
 $next.addEventListener( "click", handleNextClick );
 $prev.addEventListener( "click", handlePrevClick );
-// $list.addEventListener( "click", handleSlideClick );
+ $list.addEventListener( "click", handleSlideClick );
 $list.addEventListener( "focusin", handleSlideClick );
 $list.addEventListener( "keyup", handleSlideKey );
