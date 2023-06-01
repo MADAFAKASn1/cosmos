@@ -10,6 +10,19 @@
   src: url('');
 }*/
 
+/*.btn{
+  cursor: pointer;
+        border:solid transparent;
+        background-color: transparent;
+        color: transparent;
+        box-shadow: transparent;
+}
+
+.btn img{
+  width: 2rem;
+  height: 2rem;
+}*/
+
 body{
   background-image:url(../fotos/espacio3.webp) ;
   background-repeat: no-repeat;
