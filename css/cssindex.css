@@ -13,7 +13,8 @@ a:active{
 
 iframe{
     border: 0ch;
-    width: 100%;
+    margin: 0.5rem;
+    width: 90%;
     height: 50rem;
 }
 
@@ -33,10 +34,7 @@ ul{
 h1{
     text-align: center;
 }
-iframe{
-  margin: 0.5rem;
-  width: 90%;
-}
+
 
 
 html::before,
